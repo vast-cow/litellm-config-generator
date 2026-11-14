@@ -1,0 +1,13 @@
+{
+  "total_input_models": 5,
+  "included_models": 4,
+  "hooked_toggle_only_models": [
+    "ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "Qwen/Qwen3.6-35B-A3B",
+    "google/gemma-4-26B-A4B-it"
+  ],
+  "skipped_models": {
+    "RiVault/Embedding-Small": "non_chat (use --include-non-chat to include supported modalities)"
+  },
+  "note": "Endpoint support and toggle metadata are not verified against running vLLM servers."
+}

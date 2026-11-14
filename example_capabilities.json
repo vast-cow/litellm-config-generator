@@ -1,0 +1,84 @@
+{
+  "models": {
+    "Qwen/Qwen3.6-35B-A3B": {
+      "chat_supported": true,
+      "modality": "text_chat",
+      "thinking": {
+        "supported": true,
+        "toggle": {
+          "parameter": "chat_template_kwargs.enable_thinking",
+          "on": true,
+          "off": false
+        }
+      },
+      "reasoning_effort": {
+        "parameter": null,
+        "options": null
+      }
+    },
+    "google/gemma-4-26B-A4B-it": {
+      "chat_supported": true,
+      "modality": "text_chat",
+      "thinking": {
+        "supported": true,
+        "toggle": {
+          "parameter": "chat_template_kwargs.enable_thinking",
+          "on": true,
+          "off": false
+        }
+      },
+      "reasoning_effort": {
+        "parameter": null,
+        "options": []
+      }
+    },
+    "ByteDance-Seed/Seed-OSS-36B-Instruct": {
+      "chat_supported": true,
+      "modality": "text_chat",
+      "thinking": {
+        "supported": true,
+        "toggle": {
+          "parameter": "chat_template_kwargs.thinking_budget",
+          "on": "positive_integer_budget",
+          "off": 0
+        }
+      },
+      "reasoning_effort": {
+        "parameter": null,
+        "options": []
+      }
+    },
+    "deepseek-ai/DeepSeek-V4-Flash": {
+      "chat_supported": true,
+      "modality": "text_chat",
+      "thinking": {
+        "supported": true,
+        "toggle": {
+          "parameter": "reasoning_effort",
+          "on": "high",
+          "off": "none"
+        }
+      },
+      "reasoning_effort": {
+        "parameter": "reasoning_effort",
+        "options": [
+          "low",
+          "high",
+          "max"
+        ]
+      }
+    },
+    "RiVault/Embedding-Small": {
+      "chat_supported": false,
+      "modality": "embedding",
+      "thinking": {
+        "supported": false,
+        "toggle": null
+      },
+      "reasoning_effort": {
+        "parameter": null,
+        "options": []
+      }
+    }
+  }
+}

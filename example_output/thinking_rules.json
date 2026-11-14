@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "toggle_only_models": {
+    "Qwen/Qwen3.6-35B-A3B": {
+      "parameter": "chat_template_kwargs.enable_thinking",
+      "on": true,
+      "off": false
+    },
+    "google/gemma-4-26B-A4B-it": {
+      "parameter": "chat_template_kwargs.enable_thinking",
+      "on": true,
+      "off": false
+    },
+    "ByteDance-Seed/Seed-OSS-36B-Instruct": {
+      "parameter": "chat_template_kwargs.thinking_budget",
+      "on": 2048,
+      "off": 0
+    }
+  }
+}
